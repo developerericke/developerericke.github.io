@@ -1,0 +1,136 @@
+
+
+#short-links a{
+    display: block;
+    font-weight: bold;
+    margin: 5px;
+    text-align: left;
+
+  
+}
+.section-title{
+  color:#868e96;
+    text-decoration: underline;
+    font-weight: bold;
+   
+
+}
+.work-period{
+    font-size: small;
+    font-style: italic;
+}
+@media screen and (min-width: 600px) {
+    #short-links{
+        width:50%;
+        text-align: left;
+        
+    }
+    #intro-section{
+        width:100%;
+        max-width: 100%!important;
+        overflow: hidden;
+
+    }
+   #avater-intro-section{
+       margin-top: 3vh;
+    width:100%;
+    max-width: 100%!important;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   } 
+    #avater-section{
+        flex:0 0 30%;
+        margin-top:5%;
+       
+    }
+    #about-intro{
+        flex:0 0 70%;
+       
+    }
+    #avater-section img{
+        border-radius:200px;
+        width:70%;
+        max-width: 70%!important;
+        height:45vh;
+        margin-left: 30%;
+    }
+
+ 
+    #skills{
+        margin-top:3vh;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #skill-matrix .card{
+        flex:0 0 45%;
+        margin-bottom:20px;
+    }
+    .experience-time{
+        margin-left: 10px;
+        font-size: small;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 600px) {
+  
+    #intro-section{
+        width:100%;
+        max-width: 100%!important;
+        overflow: hidden;
+
+    }
+   #avater-intro-section{
+       margin-top: 3vh;
+    width:100%;
+    max-width: 100%!important;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   } 
+    #avater-section{
+        flex:0 0 100%;
+       
+    }
+    #about-intro{
+        flex:0 0 100%;
+       
+    }
+    #avater-section img{
+        border-radius:200px;
+        width:65%;
+        max-width: 65%!important;
+        height:40vh;
+      
+    }
+
+ 
+    #skills{
+        margin-top:3vh;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #skill-matrix .card{
+        flex:0 0 95%;
+        margin-bottom:20px;
+    }
+    .experience-time{
+        margin-left: 10px;
+        font-size: small;
+    }
+
+ 
+    #short-links{
+        width:100%;
+        text-align: left;
+        
+    }
+
+    
+}
