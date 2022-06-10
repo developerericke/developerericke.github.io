@@ -5,21 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ERIC NDERITU</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-   <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
-        </style>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
-        </style>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Mulish:ital@1&display=swap');
-            </style>
-    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nuosu+SIL&display=swap" rel="stylesheet">
+
 
 <style>
+
+  body{
+    background: #16222A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  }
+
+  .work-item:hover{
+    background-color: rgb(225, 222, 219);
+  }
+  
+  #content-wrap{
+    background-color: whitesmoke;
+  }
+
+  #contact-section{
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-size: large;
+
+  }
+
+
+  @media screen and ( min-width : 788px ){
+
+  #content-wrap{
+    width: 70%;
+    margin-left: 15%;
+  }
+  .profile-img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  #works{
+    margin-top: 50px;
+  }
+  #contact-section{
+    margin-bottom: 20px;
+
+
+  }
+
+}
+@media screen and ( max-width : 787px ){
+
+    #content-wrap{
+      width: 98%;
+      margin-left: 1%;
+    }
+    .profile-img{
+      width: 100px;
+      height: 100px;
+    }
+
+    #works{
+      margin-top: 50px;
+    }
+    #contact-section{
+      margin-bottom: 20px;
+    }
+
+}
+
 
 
 
@@ -30,184 +90,194 @@
 <body>
  <div class="container-fluid p-2">
 
-  <section id="intro-section" class="text-center border bg-light m-2 border border-light" >
-       <h2 style="font-family: 'Lato', sans-serif;"  class="text-success" >ERIC NDERITU</h2>
-       <h3 style="text-decoration:underline;font-family: 'Zen Antique Soft', serif;">FullStack Web Developer</h3>
-       <div id="avater-intro-section" style="background-color: white;" class="shadow-lg p-2">
-           <div id="avater-section">
-                <img  src="images/profile1.jpg" alt="Eric Nderitu">
+    <div id="content-wrap">
+    
+          <div class="bg-dark d-flex justify-content-end flex-row flex-wrap">
+    
+              <div class="m-2" >
+                  <a class="nav-link text-light" href="#about-me"><h4>About Me</h4></a>
+              </div>
+              <div class="m-2">
+                <a class="nav-link text-light" href="#works"><h4>Projects</h4></a>
+              </div>
+              <div class="m-2">
+                <a class="nav-link text-light" href="#works"><h4>Resume</h4></a>
+              </div>
 
-           </div>
-           <div id="about-intro" class="p-5">
-            <h4 class="section-title">About Me</h4>
-               <p>I'm a skilled fullstack developer based in Nairobi,Kenya. Currenntly , I work remotely as a freelancer at <a href="https://www.upwork.com/" style="text-decoration: none;">Upwork</a> delivering high quality work 
-                   to clients and achieved a highly rated work <a style="text-decoration: none;" href="https://www.upwork.com/freelancers/~0147818058bea8eedd?viewMode=1">profile</a> with over 90% Job success rate.<br>
-                   I specialize in <b>developing simple and complex web applications ,chrome extention tools ,scripting and software maintainace </b>
-                   by utilizing the latest technologies and tools.<br><br>
+          </div>
 
-                   With  my skills and experience, I am ready to take on any challenge and help you to build a great product.<br>
+          <div id="contact-section" class="text-center p-3">
+            <h4 style="font-family: 'Montserrat', sans-serif;" class=" mb-3 text-center text-muted">Get in Touch</h4>
 
-                   
-               </p>
-               <div id="short-links">
+            <div class="row m-0">
+              <div class="col-sm-12 col-12 col-md-4 col-lg-4 text-center">
+                <a class="text-decoration-none m-2" href="#"><i class="fa-solid fa-phone"></i>  +254 724144002</a>
+              </div>
+              <div class="col-sm-12 col-12 col-md-4 col-lg-4 text-center">
+                <a class="text-decoration-none m-2" target="_blank" href="mailto:developer.ericke@gmail.com"><i class="fa-solid fa-envelope"></i> developer.ericke@gmail.com</a>
                 
-                <a class="btn btn-light text-info btn-sm " href="https://github.com/developerericke">- Check personal projects and Code I have written here</a>
-                
-                <a class="btn btn-light text-success btn-sm " href="https://drive.google.com/file/d/1Y9xtwuRyNaVJP7MouZgDIfyP8lUn3djM/view">- Check my resume here</a>
-                <a class="btn btn-light text-dark btn-sm" href="mailto:developer.ericke@gmail.com">- Get in touch : developer.ericke@gmail.com</a>
+              </div>
 
-               </div>
-           </div>
+              <div class="col-sm-12 col-12 col-md-4 col-lg-4 text-center">
+                <a class="text-decoration-none " target="_blank" href="https://www.linkedin.com/in/eric-nderitu-bb3198192"><i class="fa-brands fa-linkedin"></i> Eric Nderitu</a>
+              </div>
+            </div>
 
-       </div>
-  </section>
+            
+            
+           
+          </div>
 
-  <section class="m-2 bg-light p-3  border-top border-light" id="skill-matrix">
-    <h4 class="section-title text-center">Skill Matrix</h4>
-    <div id="skills">
-    <div class="card">
-        <div class="card-body">
-          <h5 class="card-title text-info">Programming Languages</h5>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text">
-              <ul>
-                  <li>Python <span class="text-muted experience-time"> 2+ Years of Experience</span> </li>
-                  <li>Javascript <span class="text-muted experience-time"> 4+ Years of Experience</span> </li>
-                  <li>SQL <span class="text-muted experience-time"> 3+ Years of Experience</span></li>
-                  <li>NoSQL <span class="text-muted experience-time"> 3+ Years of Experience</span></li>
+
+          <div id="about-me" class="border border-1 p-1 rounded-end ">
+            <h4 style="font-family: 'Montserrat', sans-serif;" class=" mb-3 text-center text-decoration-underline">Who is Eric Nderitu ?</h4>
+
+            <div class="row m-0">
+              <div class="col-md-8 col-lg-8 col-sm-12 col-12">
+                <p style="font-family: 'Open Sans', sans-serif;">I am a fullstack software developer from Nairobi, Kenya working with latest technologies to develop software solutions .
+                  Having over 2 years of experience working with multiple programming languages, I'm able develop robust software that meet market standards and achieve specified goals.
+                  My expertise is in working on backend code but I'm flexible and able to work on  frontend software as well.
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-4 col-sm-12 col-12 text-center">
+                  <img class="profile-img rounded-circle" src="./images/profile1.jpg" alt="">
+              </div>
+            </div>
+           
+            <p>
+             
+            <h5 class="text-primary mt-3 p-1 text-decoration-underline">Programming Languages and Tech Stacks</h5>
+              <ul style="font-family: 'Nuosu SIL', serif;">
+                <li>Python</li>
+                <li>Javascript</li>
+                <li>Django stack (JavaScript - Python - Django - MySQL)</li>
+                <li>MEAN stack (JavaScript - MongoDB - Express - AngularJS - Node.js)</li>
+                <li>Other technologies : Git,Bitbucket,Nginx,Apache,web scrapping</li>
               </ul>
-          </p>
-       
-        </div>
-      </div>
-
-
-      <!-- Fullstack Skills -->
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title text-info">FullStack Web Technologies/Languages</h5>
-          <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-          <p class="card-text">
-              <ul>
-                  <li>Mysql and Mongodb Databases  </li>
-                  <li>Javascript (React Js and Node Js/Express Js) </li>
-                  <li>Python (Django)</li>
-                  <li>REST APIs </li>
-              </ul>
-          </p>
-       
-        </div>
-      </div>
-
-
-
-    <!-- Scripting Skills -->
-    <div class="card">
-        <div class="card-body">
-            <h5 class="card-title text-info">Scripting Languages and Tools</h5>
-            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-            <p class="card-text">
-                <ul>
-                    <li>Python  </li>
-                    <li>Javascript </li>
-                    <li>CSV</li>
-                
-                </ul>
             </p>
-        
-        </div>
-        </div>
+
+            <h5 class="text-primary mt-3 p-1 text-decoration-underline">Relevant Work Experience</h5>
+             <div class="shadow border border-1">
+                <div class="p-2 mb-2 border-top border-1">
+                  <div style="font-weight:bold"><i class="fa-solid fa-id-card"></i> FullStack Web Developer </div>
+                  <div> <span class="text-primary">  Painelconstru</span>  - <span class="text-muted">Contract Based</span></div>
+                  <div style="font-size: small" class="text-muted" > <i class="fa-solid fa-clock"></i>  2020-Present</div>
+                      <div class="mt-1" style="font-family: 'Open Sans', sans-serif;">I lead our team in developing engineering price panel platform for Engeneering market in brazil.The platform is web based 
+                        and has its associated sub-platforms that serverd different type of clients.Our team also develops alot of internal scripts for automation tasks.  
+                      </div>
+                </div>
+
+                <div class="p-2 mb-2 border-top border-1">
+                  <div style="font-weight:bold"><i class="fa-solid fa-id-card"></i> Software Deployement ,Debugging and Features intergration </div>
+                  <div> <span class="text-primary">Magnasoftwares</span>  - <span class="text-muted">Contract Based</span></div>
+                  <div style="font-size: small" class="text-muted" > <i class="fa-solid fa-clock"></i>  2021-Present</div>
+                  <div class="mt-1" style="font-family: 'Open Sans', sans-serif;"> I frequently collaborate with existing teams and frequently debug existing web based projects ,intergrate new features and carry out bug fixing.Collaboration has
+                    enabled me to share my expertise and gain more experience and collaborating skills in the process.I mainly work on django,react,postgresql and flutter projects.
+                  </div>
+                 </div>
+             </div>
 
 
-     <!-- Other Skills -->
-     <div class="card">
-        <div class="card-body">
-            <h5 class="card-title text-info">Other Skills and tools</h5>
-            <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
-            <p class="card-text">
-                <ul>
-                    <li>Git (Github & Bitbucket)  </li>
-                    <li>NGINX Web Server Setup & Configuration</li>
-                    <li>Wordpress</li>
-                    <li>SSH </li>
-                    <li>Selenium</li>
-                    
-                    
+           <h5 class="text-decoration-underline p-1 mt-3 text-primary">Education</h5>
+           <div class="p-2 shadow">
+             <div><i class="fa-solid fa-graduation-cap"></i> BSC. Computer Science</div>
+             <div><i class="fa-solid fa-building-columns"></i> University of Embu,Kenya - <span class="text-muted">2017,August - 2021,August</span> </div>
+           </div>
+
+
+          </div>
+
+
+
+          <div id="works" class="border border-1 p-1 rounded-end ">
+            <h4 style="font-family: 'Montserrat', sans-serif;" class=" mb-3 text-decoration-underline text-center">Projects I have worked on</h4>
+
+             <p style="font-family: 'Open Sans', sans-serif;">Below are some of my recent projects I have worked on.You can view more projects on <a class="text-decoration-none" target="_blank" href="https://github.com/developerericke/"> <i class="fa-brands fa-github"></i> Github </a> 
+              and <a class="text-decoration-none" target="_blank" href="https://bitbucket.org/developerericke/"> <i class="fa-brands fa-bitbucket"></i> Bitbucket </a> </p>
+            
+            
+              <div class="row m-0">
+              <div class="col-12 col-sm-12 col-md-4 work-item col-lg-4 border border-1">
                 
-                </ul>
-            </p>
-        
-        </div>
-        </div>    
+                    <div class="card" >
+                      <img src="./images/painelconstru.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a target="_blank" class="text-decoration-none" href="https://painelconstru.com.br"> <i class="fa-solid fa-link"></i> Painelconstru</a>  
+                        </h5>
+                        <p class="card-text" style="font-family: 'Open Sans', sans-serif;">A price listing platform  for the engineering market in Brazil.</p>
+                        <div class="mb-2" style="font-size:small;">
+                          <i class="fa-solid fa-laptop-code"></i> Build using :<br> Django,Mysql and Javascript
+                        </div>
+                        <div class="text-center border-top border-1 p-1">
+                          <a  class="text-decoration-none disabled-1" href="#">
+                          <button class="btn disabled btn-sm btn-primary"><i class="fa-solid fa-code"></i> Closed Source Software </button> 
+                          </a>
+                        </div>
+
+                      </div>
+                    </div>
+                  
+              </div>
+
+
+
+              <div class="col-12 col-sm-12 work-item col-md-4 col-lg-4 border border-1">
+                  <div class="card">
+                    <img src="./images/wordspoon.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-muted">
+                        <a target="_blank" class="text-decoration-none" href="https://wordspoon.eric-apps.space/signup/"> <i class="fa-solid fa-link"></i> Wordspoon</a></h5>
+                        <p class="card-text" style="font-family: 'Open Sans', sans-serif;">A chrome extension tool that allows users to search and save word meanings from anywhere in the browser</p>
+                        <div class="mb-2" style="font-size:small;">
+                          <i class="fa-solid fa-laptop-code"></i> Build using :<br> Node js,Mysql and Javascript
+                        </div>
+                        <div class="text-center border-top border-1 p-1">
+                          <a  class="text-decoration-none disabled-1" href="#">
+                          <button class="btn disabled btn-sm btn-primary"><i class="fa-solid fa-code"></i> Closed Source Software </button> 
+                          </a>
+                        </div>
+
+                    </div>
+                  </div>
+              </div>
+
+
+
+
+              <div class="col-12 work-item col-sm-12 col-md-4 col-lg-4 border border-1">
+               
+                  <div class="card" >
+                    <img src="./images/mawingu.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <a target="_blank" class="text-decoration-none" href="https://mawingu.eric-apps.space/"> <i class="fa-solid fa-link"></i> Mawingu </a>
+                      </h5>
+                      <p class="card-text" style="font-family: 'Open Sans', sans-serif;">An implementation of cloud storage service where users can save their files and documents securely</p>
+                      <div class="mb-2" style="font-size:small;">
+                        <i class="fa-solid fa-laptop-code"></i> Build using :<br> Node Js,Mongo Db and Javascript
+                      </div>
+                      <div class="text-center border-top border-1 p-1">
+                        <a  class="text-decoration-none" href="https://github.com/developerericke/cloud-storage-implementation-in-node-js">
+                        <button class="btn  btn-sm btn-primary"><i class="fa-brands fa-github"></i> View Source Code </button> 
+                        </a>
+                      </div>
+
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+
+          
+
     </div>
-  </section>
-  
-   <section id="work-experience">
-    <h4 class="section-title text-center">Relevant Work Experience</h4>
-
-
-    <div class="card m-3" >
-        <div class="card-body">
-          <h5 class="card-title">Daudt Engineering    </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Fullstack Web Developer and Scripting Expert - <span class="work-period">December, 2020 - Present</span></h6>
-          <p class="card-text" style="font-family: 'Jost', sans-serif;">Currently working as a lead developer ,who is developing web-based software tools  as well as company internal scripts that will allow clients to find and analyze engineering products in the market arounf brazil.<br>
-          The product we are working on is at the core of the company's engineering operations and is projected to used by thousands of clients.  
-        </p>
-          <a style="text-decoration: none;" href="https://painelconstru.com.br/" target="_blank" class="card-link">View website developed</a>
-          <!-- <a href="" class="card-link">Contact Employer</a> -->
-        </div>
-      </div>
-      
-      <div class="card m-3" >
-        <div class="card-body">
-          <h5 class="card-title">Freelancer at Upwork  </h5>
-          <h6 class="card-subtitle mb-2 text-muted" style="font-family: 'Jost', sans-serif;">Web Developer and Scripting Tools Expert - <span class="work-period">August, 2020 - Present</span></h6>
-          <p class="card-text">I have actively been working on both long term and short projects for clients which composed of developing web applications ,chrome extensions and scripting tools i.e web scrappers .My skillset 
-              has allowed clients to improve on delivery time of their new startup software tools as well as utilize scripts to fetch and analyze data from multiple web sources.
-          </p>
-          <a style="text-decoration: none;" href="https://www.upwork.com/freelancers/~0147818058bea8eedd?viewMode=1" target="_blank" class="card-link">View my Upwork Profile</a>
-          <!-- <a href="#" class="card-link">Employee Reference</a> -->
-        </div>
-      </div>
-
-      <div class="card m-3" >
-        <div class="card-body">
-          <h5 class="card-title">Ticore Constructors Ltd  </h5>
-          <h6 class="card-subtitle mb-2 text-muted">Fullstack Web Developer - <span class="work-period">August, 2020 - Present</span></h6>
-          <p class="card-text" style="font-family: 'Jost', sans-serif;">I enabled Ticore Constructors Ltd to achieve online precense through the development of the company portfolio website showcasing current construction projects and building plans.
-              This allowed the company to establish a strong online presence,credibility  and increase sales.
-          </p>
-          <a style="text-decoration: none;" href="https://ticoreconstructors.com/" target="_blank" class="card-link">View website developed</a>
-          <!-- <a href="#" class="card-link">Employee Reference</a> -->
-        </div>
-      </div>
-
-
-
-
-
-
-   </section>
-
-   <section id="contact-info" class="p-4 m-2 bg-dark">
-    <h4 class="section-title text-light text-center">Contact Me</h4>
-    <div class="card bg-dark text-light">
-        <div class="card-body">
-          <p style="font-size:large" class="text-success"> Want to get intouch with me ?</p>
-          <ul>
-                <li>Email: <a href="mailto:developer.ericke@gmail.com"> developer.ericke@gmail.com</a>
-                 <li>Telephone : +254 724 144 002 </li>   
-          </ul>
-        </div>
-      </div>
-
-      <p class="text-white text-center p-2" >&copy; 2021 - Eric Nderitu</p>
-   </section>
 
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
    
 
 </body>
